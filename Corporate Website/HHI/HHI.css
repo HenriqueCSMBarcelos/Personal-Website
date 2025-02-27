@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/* Resetting margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*body */
+body {
+
+    font-size: 17px;
+    line-height: 3;
+    background-color: #ffffff;
+    color: #333;
+
+}
+
+header {
+    padding-left: 1000px;
+    background-color: #BD2949;
+    color: #fff;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 70px; 
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.logo {
+    margin-top: -10px;
+    margin-right: 20px;
+    outline: 1px solid white;
+    border-radius: 30px; 
+    outline-offset: -8px; 
+    
+}
+
+/* home section */
+#home {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    padding: 4rem 2rem 2rem; 
+    padding-top: calc(4rem + 60px); 
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.1rem;
+}
+
+/* Other sections */
+section {
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    padding-top: calc(2rem + 60px); 
+}
+
+/* Team Section */
+#team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-photo {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Contact Us section */
+#contact {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    min-height: auto; 
+    margin-bottom: 80px; 
+    padding-top: calc(9rem + 60px); 
+}
+
+/* news section*/
+#news {
+    padding-top: calc(0.1rem + 60px);
+}
+.newslist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stacklist {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Feedback section*/
+label {
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+.fb{
+    width: 80%;
+    background-color: #f7dede;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+form {
+    padding-top:20px;
+    max-width: 500px;
+    min-width: 300px;
+}
+fieldset {
+    border-style: solid;
+    border-color:#8B4513;
+    border-radius: 10px;
+    padding: 1rem 0;
+    padding-left: 2em;
+    margin-bottom: 20px;
+}
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 90%;
+    min-height: 2em;
+}
+input, textarea {
+    border: 1px solid #8B4513;
+    color: #8B4513;
+}
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+input[type="submit"] {
+    display: block;
+    width: 10%;
+    margin: 0.5em auto;
+    height: 2.5em;
+    font-size: 1.2rem;
+    color: #8B4513;
+    min-width: 100px;
+    border-style:solid;
+    border-color:#8B4513;
+    border-radius: 10px;
+}
+
+/* Footer section*/
+footer {
+    background-color: #BD2949;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: sticky;
+    height: 70px;
+    
+}
+
+@media (max-width: 768px) {
+    #team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+a {
+    color: rgb(188, 51, 51);
+    text-decoration: none;
+ }
